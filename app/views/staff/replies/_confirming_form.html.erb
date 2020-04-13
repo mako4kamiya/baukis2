@@ -1,4 +1,4 @@
-<%= markup(:div, id: "confirming-panel") do |m|
+<%= markup(:div) do |m|
   p = ConfirmingFormPresenter.new(f, self)
   m.div "以下の内容で返信します。よろしいですか？ "
   m << p.text_field_block(:subject, "件名")
